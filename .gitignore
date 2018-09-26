@@ -4,7 +4,11 @@
 *.zip
 *.7z
 .vs/
+
+Release/
+Debug/
+
 Atmel/NixieClock_M8/
 Atmel/NixieClock_M88/
 Atmel/NixieTest/
-PCB/Kicad
+PCB/Kicad/
