@@ -1,0 +1,27 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Nixie PCB left
+*Date=12:25:34
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;21.1271;-18.7224;0;Bottom;Via4
+2;;;24.1751;-9.57841;0;Bottom;Via3
+3;;;17.0553;-1.8731;0;Bottom;Hole3
+4;;;17.0299;-28.1731;0;Bottom;Hole2
+5;;;1.82993;-1.8731;0;Bottom;Hole1
+6;;THT;13.5299;-2.9031;180;Bottom;J5
+7;;;9.43009;-17.0731;180;Bottom;IN-12B
+8;;THT;9.52994;-2.8431;180;Bottom;J6
+9;;;1.82815;-28.1583;0;Bottom;Hole4
+10;;avr_icsp;26.1028;-19.8156;180;Bottom;JP1
+11;;;19.2983;-10.7976;0;Bottom;Via1
+12;;;20.5175;-8.96881;0;Bottom;Via2

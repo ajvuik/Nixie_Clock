@@ -1,0 +1,9 @@
+*.pdf
+*.png
+*.jpg
+*.zip
+*.7z
+Atmel/NixieClock_M8/
+Atmel/NixieClock_M88/
+Atmel/NixieTest/
+PCB/Kicad

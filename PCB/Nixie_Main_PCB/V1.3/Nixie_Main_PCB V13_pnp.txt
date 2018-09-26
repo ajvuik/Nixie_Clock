@@ -1,0 +1,114 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Nixie_Main_PCB V13
+*Date=17:36:47
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;97.5055;-20.2943;0;Bottom;TXT1
+2;15k;THT;35.8157;-12.0274;90;Bottom;R12
+3;;;77.3158;-5.94763;0;Bottom;Via53
+4;;THT;52.3158;-11.2175;0;Bottom;J2
+5;;;42.8158;-9.44747;0;Bottom;Via6
+6;1k;THT;53.2359;-31.9475;180;Bottom;R7
+7;15k;THT;33.3158;-12.0274;90;Bottom;R13
+8;;;105.3;-8.96741;0;Bottom;Via52
+9;;;113.797;-8.40773;-90;Bottom;TXT2
+10;;300 mil [THT];8.81578;-15.363;-90;Bottom;D2
+11;10k;THT;24.8158;-22.3277;90;Bottom;R9
+12;360k;THT;30.8158;-12.0274;90;Bottom;R14
+13;;;19.3158;-21.4476;0;Bottom;Via34
+14;;;34.2021;-0.731271;0;Bottom;TXT4
+15;100nF;100 mil [THT, multilayer];78.0409;-13.9477;0;Bottom;C8
+16;5V;to220-igo;24.6332;-35.4875;90;Bottom;IC2
+17;;THT;-2.00896;-6.89778;180;Bottom;R5
+18;;;75.9623;-1.06288;0;Bottom;TXT6
+19;10k;THT;52.7358;-23.4476;0;Bottom;R10
+20;;THT;76.0456;-2.94751;-90;Bottom;J6
+21;;;51.2379;-0.887058;0;Bottom;TXT5
+22;;;105.016;-24.5475;0;Bottom;Via39
+23;;;85.8158;-3.44771;0;Bottom;Via24
+24;;THT;34.5858;-2.94751;90;Bottom;J1
+25;;DIP16 [THT];92.0456;-12.7576;-90;Bottom;U2
+26;;;52.391;-7.90028;0;Bottom;TXT8
+27;;;28.8156;-37.4476;0;Bottom;Hole3
+28;;;58.539;-11.401;0;Bottom;Via54
+29;;THT;51.0458;-2.94751;-90;Bottom;I2C
+30;;2x5-ra;110.648;-31.4475;0;Bottom;JP2
+31;;;95.8048;-12.9414;0;Bottom;Via50
+32;10k;THT;42.8157;-11.8677;90;Bottom;R3
+33;;;24.3156;-21.4476;0;Bottom;Via33
+34;;;93.3158;-20.9475;0;Bottom;Via15
+35;;;78.3157;-15.4475;0;Bottom;Via20
+36;;;69.8158;-18.1475;0;Bottom;Via17
+37;27pF;100 mil [THT, multilayer];77.5905;-35.7477;180;Bottom;C10
+38;;;85.8313;-21.944;0;Bottom;Via44
+39;;to220v;13.8159;-24.6349;180;Bottom;Q1
+40;;;12.6323;-5.04268;0;Bottom;IMG1
+41;;;97.3104;-1.93979;0;Bottom;Via48
+42;;THT;48.3156;-12.4076;0;Bottom;J3
+43;100nF;100 mil [THT, multilayer];59.5904;-17.9476;180;Bottom;C4
+44;;;88.3157;-19.9475;0;Bottom;Via21
+45;;;0.775829;-34.4475;0;Bottom;JACK1
+46;;;100.834;-34.9764;0;Bottom;Via43
+47;27pF;100 mil [THT, multilayer];77.4903;-22.3475;180;Bottom;C11
+48;;;105.016;-33.5476;0;Bottom;Via13
+49;1k;THT;53.2359;-37.4475;180;Bottom;R1
+50;;;73.9156;-20.8476;0;Bottom;Via23
+51;;dil28-3-simon-kit;68.0384;-19.3377;-90;Bottom;IC1
+52;100µH;400 mil [THT];52.7358;-20.4475;180;Bottom;L2
+53;;;105.016;-22.9476;0;Bottom;Via42
+54;;;27.3156;-1.9477;0;Bottom;Hole1
+55;;;113.813;-31.4086;-90;Bottom;TXT2
+56;;;44.8157;-13.4477;0;Bottom;Via30
+57;;2x5-ra;110.648;-8.4475;0;Bottom;JP1
+58;;;42.8158;-32.4475;0;Bottom;Via38
+59;;;10.0535;-5.59239;0;Bottom;IMG1
+60;1k;THT;53.2359;-34.9476;180;Bottom;R6
+61;;DIP16 [THT];92.0456;-28.7576;-90;Bottom;U3
+62;;;97.3104;-5.45346;0;Bottom;Via47
+63;;;105.016;-28.1475;0;Bottom;Via40
+64;;;27.8157;-24.9477;0;Bottom;Via32
+65;47µF;300 mil [THT, electrolytic];19.3159;-8.25752;90;Bottom;C9
+66;330µH;400 mil [THT];3.81564;-21.8677;90;Bottom;L1
+67;;;80.3158;-1.9477;0;Bottom;Hole4
+68;;;69.8158;-36.4477;0;Bottom;Via16
+69;100nF;100 mil [THT, multilayer];75.3158;-18.1728;-90;Bottom;C5
+70;;;50.8157;-16.9475;0;Bottom;Via9
+71;;;42.8156;-13.4477;0;Bottom;Via31
+72;;;83.2972;-5.45346;0;Bottom;Via46
+73;;;58.4987;-5.64448;0;Bottom;TXT8
+74;;THT;76.3149;-28.902;90;Bottom;XTAL1
+75;2.2k;THT;21.3157;-22.3277;90;Bottom;R2
+76;;300 mil [THT];14.6002;-37.9476;180;Bottom;D1
+77;;;56.3285;-9.76662;0;Bottom;TXT6
+78;;;101.803;-36.4612;0;Bottom;Via41
+79;360k;THT;6.81567;-6.5275;90;Bottom;R4
+80;100nF;100 mil [THT, multilayer];19.3159;-31.2222;90;Bottom;C2
+81;4.7µF;100 mil [THT, electrolytic];13.0457;-31.4474;0;Bottom;C1
+82;;;76.8157;-11.9477;0;Bottom;Via8
+83;;;95.8048;-14.9491;0;Bottom;Via49
+84;;;93.3158;-4.44762;0;Bottom;Via27
+85;;;105.3;-15.4512;0;Bottom;Via51
+86;;;100.816;-27.9477;0;Bottom;Via11
+87;1k;THT;53.2359;-29.4476;180;Bottom;R8
+88;15k;THT;38.3156;-12.0274;90;Bottom;R11
+89;;;90.8156;-21.9477;0;Bottom;Via45
+90;;;95.3248;-20.2023;0;Bottom;TXT3
+91;100nF;100 mil [THT, multilayer];78.0457;-8.74746;180;Bottom;C6
+92;;;44.8157;-16.4477;0;Bottom;Via29
+93;100nF;100 mil [THT, multilayer];13.0409;-18.4477;0;Bottom;C3
+94;;THT;58.6557;-7.64764;90;Bottom;J5
+95;100nF;100 mil [THT, multilayer];80.0156;-27.673;-90;Bottom;C7
+96;;;68.3157;-20.4476;0;Bottom;Via3
+97;;;48.239;-7.74449;0;Bottom;TXT9
+98;;;80.3158;-37.4476;0;Bottom;Hole2
+99;;DIP16 [THT];36.5057;-28.7175;180;Bottom;U1
