@@ -3,6 +3,7 @@
 *.jpg
 *.zip
 *.7z
+.vs/
 Atmel/NixieClock_M8/
 Atmel/NixieClock_M88/
 Atmel/NixieTest/
