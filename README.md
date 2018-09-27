@@ -1,4 +1,4 @@
-#Nixie Clock
+# Nixie Clock
 
 This is a nixie clock based on an Atmel Atmega328 running on a 8Mhz external Xtal. It is programmed in Atmel Studio 7.0
 and the PCB is designed in Fritzing.
