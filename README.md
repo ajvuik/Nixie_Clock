@@ -29,6 +29,7 @@ Power loss time keeping is done through an DS1307 module which can be bought in 
 - [ ] Order and test V1.3 PCB
 - [ ] Manual for the menu/clock
 - [ ] Fix fading
+- [ ] Replace the TLP627-4 optocoupler since it is obsolete
 
 ### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
