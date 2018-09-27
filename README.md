@@ -26,9 +26,9 @@ Do not use PCB's lower than 1.3, these have a bug that shorts out the powersuppl
 * I2C based GPS reciever
 	
 ### Todo:
-* Order and test V1.3 PCB
-* Manual for the menu/clock
-* Fix fading
+- [ ] Order and test V1.3 PCB
+- [ ] Manual for the menu/clock
+- [ ] Fix fading
 
 ### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
