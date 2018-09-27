@@ -8,6 +8,7 @@ Power loss time keeping is done through an DS1307 module which can be bought in 
 **Do not use PCB's lower than V1.3, these have a bug that shorts out the powersupply!**
 
 ### Features:
+* 12/24H
 * 4/6 nixies
 * Seconds colons on/of
 * Tube saving by time/light or both
