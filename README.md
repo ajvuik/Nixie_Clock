@@ -11,6 +11,7 @@ The Nixies are multiplexed in pairs, so counting from left to right: nixies 1&2 
 ### Features:
 * 12/24H
 * 4/6 nixies
+* Nixie saving by rolling the nixies every minute
 * Seconds colons on/of
 * Tube saving by time, light or both
 * Time restoring after powerloss by adding an DS1307 time keeper
