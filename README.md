@@ -1,9 +1,9 @@
 # Nixie Clock
 
 This is a nixie clock based on an Atmel Atmega328 running on a 8Mhz external Xtal. It is programmed in [Atmel Studio 7.0](http://www.microchip.com/mplab/avr-support/atmel-studio-7)
-and the PCB is designed in [Fritzing](http://fritzing.org/home/).
-Currently it uses 2 buttons to go through an extensive menu structure to configure the clock.
-Power loss time keeping is done through an DS1307 module which can be bought in the more famous chinese on-line stores.
+and the PCB is designed in [Fritzing](http://fritzing.org/home/).<br />
+Currently it uses 2 buttons to go through an extensive menu structure to configure the clock.<br />
+Power loss time keeping is done through an DS1307 module which can be bought in the more famous chinese on-line stores.<br />
 
 **Do not use PCB's lower than V1.3, these have a bug that shorts out the powersupply!**
 
