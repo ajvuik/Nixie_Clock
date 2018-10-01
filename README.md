@@ -22,7 +22,7 @@ The Nixies are multiplexed in pairs, so counting from left to right: nixies 1&2 
 * Gerber files provided, so you can order the PCB's yourself
 	
 ### Known bugs:
-* Clock runs to fast(about a minute per week), external recievers are beeing created to remedy this problem(See WIP)
+* Clock runs to fast(about a minute per week), external receivers are beeing created to remedy this problem(See WIP)
 * Fading doesn't work
 	
 ### Work in progress:
