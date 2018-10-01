@@ -27,9 +27,9 @@ The Nixies are multiplexed in pairs, so counting from left to right: nixies 1&2 
 	
 ### Work in progress:
 * I2C based Dekatron controller as a seconds counter
-* I2C based DCF77 reciever
-* I2C based NTP reciever (ESP8266 or ESP32 based)
-* I2C based GPS reciever
+* I2C based DCF77 receiver
+* I2C based NTP receiver (ESP8266 or ESP32 based)
+* I2C based GPS receiver
 	
 ### Todo:
 - [ ] Order and test V1.3 PCB
