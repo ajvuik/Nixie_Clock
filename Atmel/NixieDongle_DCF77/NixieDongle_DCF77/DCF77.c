@@ -28,6 +28,7 @@ void DCF_INIT(){
 	MCUCR |= (1<<ISC10);//Up or down
 	DDRD &= ~(1<<PORTD3);//Input
 	PORTD |= (1<<PORTD3);//With pullup enabled
+	DDRB |= (1<<PORTB0)|(1<<PORTB1)|(1<<PORTB2)|(1<<PORTB3);
 	USI_Slave_register_buffer[1] = &DCF77.Minute;
 	USI_Slave_register_buffer[2] = &DCF77.Hour;
 	USI_Slave_register_buffer[4] = &DCF77.Day;
@@ -38,27 +39,48 @@ void DCF_INIT(){
 void DCF_LOOP(){
     static const uint8_t xBCD[] = { 1, 2, 4, 8, 10, 20, 40, 80 };
 		  static uint8_t xParity = 0;
-				 uint8_t x10ms = Timer_Pulse_10ms();
-				 uint8_t xCurrBit = 0;
+		  volatile uint8_t x10ms = Timer_Pulse_10ms();
+		  static uint8_t xCurrBit = 0;
+	if (DCF77.InSync){
+		PORTB &= ~(1<<PORTB0);
+	}
+	else{
+		PORTB |= (1<<PORTB0);
+	}
 
 	DCF77.Timer=DCF77.Timer+(x10ms&&DCF77_Flank);
 	
 	if (DCF77_Flank==0 && DCF77.Timer>0){
-		if (DCF77.Timer>100){
+		xCurrBit=0;
+		DCF77.Update++;
+		if (DCF77.Timer>50){
 			DCF77.StartSignal++;
 			DCF77.SecondCounter=0;
 		}
-		else if (DCF77.Timer>16){
+		else if (DCF77.Timer>20){
 			xCurrBit=1;
 			DCF77.SecondCounter++;
 		}
-		else{
+		else if (DCF77.Timer>9){
 			DCF77.SecondCounter++;
+		}
+		else{
+			DCF77.Update=0;
 		}
 		DCF77.Timer=0;
 	}
-	if (DCF77.SecondCounter!=DCF77.SecondCounterOld){
-		DCF77.SecondCounterOld=DCF77.SecondCounter;
+	if (DCF77.Update>0){
+		DCF77.Update=0;
+
+		PORTB ^= (1<<PORTB1);
+		if (xCurrBit>0){
+			PORTB &= ~(1<<PORTB2);
+			PORTB |= (1<<PORTB3);
+		}
+		else{
+			PORTB |= (1<<PORTB2);
+			PORTB &= ~(1<<PORTB3);
+		}
 		
 		xParity ^= xCurrBit;
 		switch(DCF77.SecondCounter){
@@ -166,8 +188,11 @@ void DCF_LOOP(){
 				}
 			}
 			break;
-			
-			
+			default:
+				if(DCF77.SecondCounter>58){
+					DCF77.InSync=0;
+					DCF77.SecondCounter=0;
+				}
 		}//DCF77.SecondCounter
 	}
 	

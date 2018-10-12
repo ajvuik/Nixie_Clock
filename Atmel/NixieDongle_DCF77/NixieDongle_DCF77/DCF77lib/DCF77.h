@@ -28,7 +28,7 @@ typedef struct {
 	uint8_t	Minute;
 	uint8_t	Hour;
 	uint8_t SecondCounter;
-	uint8_t SecondCounterOld;
+	uint8_t Update;
 	uint8_t InSync;
 	uint8_t StartSignal;	 
 } DCF_struct;
