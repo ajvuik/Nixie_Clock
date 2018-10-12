@@ -13,4 +13,4 @@ Atmel/NixieClock_M88/
 Atmel/NixieTest/
 PCB/Kicad/
 
-!PCB\Fritzing\PDF\*.pdf
+!/PCB/Fritzing/PDF/*.pdf
