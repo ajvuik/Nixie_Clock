@@ -9,7 +9,7 @@ The Nixies are multiplexed in pairs, so counting from left to right: nixies 1&2 
 **Do not use Main-PCB's lower than V1.31, these have several bugs!**
 
 ### Features:
-* Modular design
+* Modular design(Mainboard seperated from nixie daughterboards)
 * 12/24H
 * 4/6 nixies
 * Nixie saving by rolling the nixies every minute
