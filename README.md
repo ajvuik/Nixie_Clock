@@ -6,10 +6,10 @@ Currently it uses 2 buttons to go through an extensive menu structure to configu
 Power loss time keeping is done through an DS1307 module which can be bought in the more famous chinese on-line stores.<br />
 The Nixies are multiplexed in pairs, so counting from left to right: nixies 1&2 are active, then nixies 3&4 and, if configured and connected, nixies 5&6.<br />
 
-**Do not use Main-PCB's lower than V1.3, these have a bug that shorts out the powersupply!**
+**Do not use Main-PCB's lower than V1.31, these have several bugs!**
 
 ### Features:
-* Modular design
+* Modular design(Mainboard seperated from nixie daughterboards)
 * 12/24H
 * 4/6 nixies
 * Nixie saving by rolling the nixies every minute
