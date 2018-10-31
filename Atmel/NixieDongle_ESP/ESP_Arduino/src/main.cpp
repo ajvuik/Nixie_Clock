@@ -74,14 +74,14 @@ void loop() {
   uint8_t _SerialBuffer[8]={0xAA,0,0,0,0,0,0,0xAA};
   const unsigned long _Epoch=timeClient.getEpochTime();
   timeClient.update();
-  //Serial.println(timeClient.getFormattedTime());
+
   _SerialBuffer[1]=timeClient.getHours();
   _SerialBuffer[2]=timeClient.getMinutes();
   _SerialBuffer[3]=timeClient.getSeconds();
   _SerialBuffer[4]=Calc_Day(_Epoch);
   _SerialBuffer[5]=Calc_Month(_Epoch);
   _SerialBuffer[6]=(Calc_Year(_Epoch)-2000);
-  Serial.print(Serial.write(_SerialBuffer, 8));
+  Serial.write(_SerialBuffer, 8);
 /*
   Serial.print(timeClient.getHours());
   Serial.print(":");
@@ -94,6 +94,7 @@ void loop() {
   Serial.print("-");
   Serial.println(Calc_Year(_Epoch));
   */
+  //update every second. We don't have anything else todo, so we use the ugly 'delay'
   delay(1000);
 }
 
