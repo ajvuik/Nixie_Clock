@@ -39,10 +39,10 @@ WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "nl.pool.ntp.org", 3600, 60000);
 
 
-int Calc_Year(unsigned long _Epoch);
-int Calc_Month(unsigned long _Epoch);
-int Calc_Day(unsigned long _Epoch);
-uint8_t DecimalToBCD(const uint8_t _Decimal);
+int Calc_Year(const unsigned long _Epoch);
+int Calc_Month(const unsigned long _Epoch);
+int Calc_Day(const unsigned long _Epoch);
+//uint8_t DecimalToBCD(const uint8_t _Decimal);
 
 void setup(){
   Serial.begin(19200);
@@ -154,7 +154,7 @@ int Calc_Day(const unsigned long _Epoch){
   }
 
 }
-
+/*
 uint8_t DecimalToBCD(const uint8_t _Decimal){
 	if(_Decimal<100){
 		uint8_t _x = _Decimal%10;
@@ -163,3 +163,4 @@ uint8_t DecimalToBCD(const uint8_t _Decimal){
 	}
 	return 0;
 }
+*/
