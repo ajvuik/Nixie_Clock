@@ -24,11 +24,6 @@
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>         //https://github.com/tzapu/WiFiManager
 
-//const char *ssid     = "AJVnet";
-//const char *password = "***REMOVED***";
-//const char *ssid      = "WGAccess";               // Set you WiFi SSID
-//const char *password  = "***REMOVED***";               // Set you WiFi password
-
 //#define DEBUG
 
 WiFiUDP ntpUDP;
