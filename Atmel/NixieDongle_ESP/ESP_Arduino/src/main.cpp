@@ -54,17 +54,6 @@ void setup(){
 #endif
   //Call the portal, this is blocking
   wifiManager.autoConnect("Nixie_ClockDongleAP");
-
-
-/*
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-
-  while ( WiFi.status() != WL_CONNECTED ) {
-    delay ( 500 );
-    Serial.print ( "." );
-  }
-*/
   //wifi is ok, start retreiving time
   timeClient.begin();
 }
