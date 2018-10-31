@@ -71,18 +71,6 @@ void loop() {
   _SerialBuffer[5]=Calc_Month(_Epoch);
   _SerialBuffer[6]=(Calc_Year(_Epoch)-2000);
   Serial.write(_SerialBuffer, 8);
-/*
-  Serial.print(timeClient.getHours());
-  Serial.print(":");
-  Serial.print(timeClient.getMinutes());
-  Serial.print(":");
-  Serial.println(timeClient.getSeconds());
-  Serial.print(Calc_Day(_Epoch));
-  Serial.print("-");
-  Serial.print(Calc_Month(_Epoch));
-  Serial.print("-");
-  Serial.println(Calc_Year(_Epoch));
-  */
   //update every second. We don't have anything else todo, so we use the ugly 'delay'
   delay(1000);
 }
