@@ -1,4 +1,4 @@
-# Nixie Clock
+# Nixie_Clock
 
 This is a modular designed nixie clock based on an Atmel Atmega328(The MCU of an arduino uno) running on a 8Mhz external Xtal. It is programmed in [Atmel Studio 7.0](http://www.microchip.com/mplab/avr-support/atmel-studio-7)
 and the PCB is designed in [Fritzing](http://fritzing.org/home/).<br />
