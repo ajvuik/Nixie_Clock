@@ -32,7 +32,7 @@ The Nixies are multiplexed in pairs, so counting from left to right: nixies 1&2 
 * I2C based GPS receiver
 	
 ### Todo:
-- [*] Order and test V1.4 PCB
+- [x] Order and test V1.4 PCB
 - [ ] Manual for the menu/clock
 - [ ] Fix fading system
 - [ ] Replace the TLP627-4 optocoupler since it is obsolete(But still available)
