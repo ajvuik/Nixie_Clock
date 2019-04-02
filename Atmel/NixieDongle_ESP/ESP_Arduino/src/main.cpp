@@ -56,8 +56,13 @@ void setup(){
 void loop() {
 
   uint8_t _SerialBuffer[8]={0xAA,0,0,0,0,0,0,0xAA};
+<<<<<<< HEAD
   timeClient.update();
   const unsigned long _Epoch=timeClient.getEpochTime();
+=======
+  const unsigned long _Epoch=timeClient.getEpochTime();
+  timeClient.update();
+>>>>>>> 7df1501a44e86a1b3544cce124dfdbf75deb512a
 
   _SerialBuffer[1]=timeClient.getHours();
   _SerialBuffer[2]=timeClient.getMinutes();
