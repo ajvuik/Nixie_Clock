@@ -37,6 +37,7 @@ NTPClient timeClient(ntpUDP, "nl.pool.ntp.org", 3600, 60000);
 int Calc_Year(const unsigned long _Epoch);
 int Calc_Month(const unsigned long _Epoch);
 int Calc_Day(const unsigned long _Epoch);
+int dow(int y, int m, int d);
 //uint8_t DecimalToBCD(const uint8_t _Decimal);
 
 void setup(){
@@ -55,16 +56,37 @@ void setup(){
 
 void loop() {
 
-  uint8_t _SerialBuffer[8]={0xAA,0,0,0,0,0,0,0xAA};
+  uint8_t _SerialBuffer[8]={0x55,0,0,0,0,0,0,0xAA};
   timeClient.update();
   const unsigned long _Epoch=timeClient.getEpochTime();
 
-  _SerialBuffer[1]=timeClient.getHours();
-  _SerialBuffer[2]=timeClient.getMinutes();
-  _SerialBuffer[3]=timeClient.getSeconds();
-  _SerialBuffer[4]=Calc_Day(_Epoch);
-  _SerialBuffer[5]=Calc_Month(_Epoch);
-  _SerialBuffer[6]=(Calc_Year(_Epoch)-2000);
+  uint8_t Hour=timeClient.getHours();
+  uint8_t Minute=timeClient.getMinutes();
+  uint8_t Second=timeClient.getSeconds();
+  uint8_t Day=Calc_Day(_Epoch);
+  uint8_t Month=Calc_Month(_Epoch);
+  uint8_t Year=(Calc_Year(_Epoch)-2000);
+  uint8_t Dow=dow(Year, Month, Day);
+
+  if((Month==3 && Dow==0 && Day+7>31 && Hour>2)||
+    (Month==3 && Dow>0 && Day+7>31)||
+    (Month==10 && Dow==0 && Day+7<31 && Hour<2)||
+    (Month==10 && Dow>0 && Day+7<31)||
+    (Month>3 && Month<10)){
+    if(Hour<24){
+      Hour+=1;
+    }
+    else{
+      Hour=1;
+    }
+  }
+ 
+  _SerialBuffer[1]=Hour;
+  _SerialBuffer[2]=Minute;
+  _SerialBuffer[3]=Second;
+  _SerialBuffer[4]=Day;
+  _SerialBuffer[5]=Month;
+  _SerialBuffer[6]=Year;
   Serial.write(_SerialBuffer, 8);
   //update every second. We don't have anything else todo, so we use the ugly 'delay'
   delay(1000);
@@ -126,6 +148,13 @@ int Calc_Day(const unsigned long _Epoch){
   }
 
 }
+
+int dow(int y, int m, int d){
+      static int t[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+      y -= m < 3;
+      return (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
+  }
+
 /*
 uint8_t DecimalToBCD(const uint8_t _Decimal){
 	if(_Decimal<100){

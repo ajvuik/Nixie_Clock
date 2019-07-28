@@ -6,13 +6,23 @@
  */ 
 
 #include <avr/io.h>
+#include "UART_Lib/UART.h"
+#include "USI_I2C_Slave/usi_i2c_slave.h"
 
+uint8_t _SerialBuffer[8];
 
-int main(void)
-{
-    /* Replace with your application code */
-    while (1) 
-    {
+int main(void){
+	USI_I2C_Init(11);
+	UART_init();
+	UART_Enable();
+	sei();
+	
+    while (1){
+		UART_Loop();
+		if(UART_Waiting()){
+			
+		}
+		
     }
 }
 
