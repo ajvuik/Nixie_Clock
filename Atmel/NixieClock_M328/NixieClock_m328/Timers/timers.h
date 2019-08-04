@@ -35,7 +35,7 @@ V0.00.1	XX-XX-XXXX
 //Defines
 
 /*ATMega 8 datasheet gives the following for pre-scaling:
-CS2	CS1	CS1	Discription						Decimal value
+CS2	CS1	CS0	Discription						Decimal value
 0	0	0	Timer disconnected				0
 0	0	1	No pre-scaling					1
 0	1	0	/8								2
