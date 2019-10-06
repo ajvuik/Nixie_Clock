@@ -8,9 +8,9 @@
             "includePath": [
                 "c:/OneDrive/Projecten/Nixie_Clock/Atmel/NixieDongle_ESP/ESP_Arduino/include",
                 "c:/OneDrive/Projecten/Nixie_Clock/Atmel/NixieDongle_ESP/ESP_Arduino/src",
+                "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src",
                 "C:/Users/Arjan en Margriet/.platformio/lib/NTPClient_ID551",
                 "C:/Users/Arjan en Margriet/.platformio/lib/WifiManager_ID567",
-                "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src",
                 "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src",
                 "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src",
                 "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src",
@@ -55,13 +55,12 @@
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": "${workspaceRoot}/.vscode/.browse.c_cpp.db",
                 "path": [
                     "c:/OneDrive/Projecten/Nixie_Clock/Atmel/NixieDongle_ESP/ESP_Arduino/include",
                     "c:/OneDrive/Projecten/Nixie_Clock/Atmel/NixieDongle_ESP/ESP_Arduino/src",
+                    "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src",
                     "C:/Users/Arjan en Margriet/.platformio/lib/NTPClient_ID551",
                     "C:/Users/Arjan en Margriet/.platformio/lib/WifiManager_ID567",
-                    "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src",
                     "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src",
                     "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src",
                     "C:/Users/Arjan en Margriet/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src",
@@ -106,7 +105,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=40000",
+                "PLATFORMIO=40003",
                 "ESP8266",
                 "ARDUINO_ARCH_ESP8266",
                 "ARDUINO_ESP8266_ESP01",
