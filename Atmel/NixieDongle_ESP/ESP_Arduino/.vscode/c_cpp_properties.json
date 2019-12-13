@@ -120,7 +120,7 @@
                 "ARDUINO_BOARD=\"PLATFORMIO_ESP01\"",
                 "FLASHMODE_QIO",
                 "LWIP_OPEN_SRC",
-                "NONOSDK22x_191024=1",
+                "NONOSDK22x_190703=1",
                 "TCP_MSS=536",
                 "LWIP_FEATURES=1",
                 "LWIP_IPV6=0",
